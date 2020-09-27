@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+           $(document).ready(function() {
+           $(this).on("click", function(e) {
+           var x = e.pageX;
+           var y = e.pageY;
+           var el = $("#meh");
+            el.css('position', 'absolute');
+            el.css("left", x);
+           el.css("top", y);
+  })
+}) 
+        </script>
+    </head>
+    <body>
+        Player Name:
+        <input type="text" name="name" id="name" />
+        <br>
+        <button name="submt" id="mehet">Submit</button>
+        <div id="meh">
+            alma
+        </div>
+    </body>
+</html>
