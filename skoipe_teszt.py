@@ -31,10 +31,10 @@ class Osztalyom:
     i = 12345
     def f(self):
         return 'hello világ'
-    def __init__(self,a):
+    def __init__(self):
         pass
 
-x = Osztalyom(1)
+x = Osztalyom()
 
 print(Osztalyom.f)
 
