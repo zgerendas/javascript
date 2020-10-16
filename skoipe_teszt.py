@@ -1,3 +1,4 @@
+'''
 spam="ALma"
 def scope_test():
     def do_local():
@@ -23,3 +24,22 @@ def scope_test():
 
 scope_test()
 print("In global scope:", spam)
+'''
+
+class Osztalyom:
+    "Egy egyszerű példa osztály"
+    i = 12345
+    def f(self):
+        return 'hello világ'
+    def __init__(self,a):
+        pass
+
+x = Osztalyom(1)
+
+print(Osztalyom.f)
+
+x.szamlalo = 1
+while x.szamlalo < 10:
+    x.szamlalo = x.szamlalo * 2
+    print(x.szamlalo)
+del x.szamlalo
