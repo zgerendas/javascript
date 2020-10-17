@@ -13,3 +13,7 @@ f = open("teszt1.py")
 
 print(f.readlines())
 f.close()
+
+print("----------")
+import os
+print(os.linesep)
