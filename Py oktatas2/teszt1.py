@@ -17,3 +17,11 @@ f.close()
 print("----------")
 import os
 print(os.linesep)
+
+class teszt:
+    def __init__(self) -> None:
+        self.a=1
+        self._a=2
+        self.__a=3
+t=teszt()
+print(t.__a)
