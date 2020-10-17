@@ -18,10 +18,26 @@ print("----------")
 import os
 print(os.linesep)
 
-class teszt:
+class Teszt:
+    __a=3 # félig privát
+
     def __init__(self) -> None:
         self.a=1
-        self._a=2
-        self.__a=3
-t=teszt()
-print(t.__a)
+        self._a=2 # privát szándék
+        
+    def javit(self):
+        self.__a +=10
+
+t=Teszt()
+print(t.a)
+print(t._a)
+print(t._Teszt__a)
+t.javit()
+print(t.a)
+print(t._a)
+print(t._Teszt__a)
+
+import sys
+sys.path.append("..")
+import modul
+aa=modul.teszt2()
